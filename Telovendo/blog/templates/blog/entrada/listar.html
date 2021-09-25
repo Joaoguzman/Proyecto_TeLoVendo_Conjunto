@@ -1,0 +1,21 @@
+{% extends '../base.html'%} {% block content %}
+<main class="container">
+  <div class="row g-5">
+    <div class="col-md-8">
+      <h3 class="pb-4 mb-4 fst-italic border-bottom">Entradas</h3>
+
+      {% for entrada in entradas %}
+      <article class="blog-post">
+        <h2 class="blog-post-title">{{entrada.titulo}}</h2>
+        <p class="blog-post-meta">{{ entrada.contenido}}</p>
+      </article>
+      {% endfor %}
+
+      <nav class="blog-pagination" aria-label="Pagination">
+        <a class="btn btn-outline-primary" href="#">Older</a>
+        <a class="btn btn-outline-secondary disabled">Newer</a>
+      </nav>
+    </div>
+  </div>
+</main>
+{% endblock %}
