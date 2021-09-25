@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'app_joao',
     'blog',
     'proyecto_gonzalo'
+    'app_anibal'
 ]
 
 MIDDLEWARE = [
@@ -81,7 +82,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'USER': 'postgres',
         'NAME': 'telovendo',
-        'PASSWORD': '123456',
+        'PASSWORD': 'root123',
         'HOST': 'localhost',
         'PORT': '5432',
     }
